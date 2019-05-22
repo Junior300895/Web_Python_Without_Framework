@@ -13,6 +13,6 @@ handler.cgi_directories = ["/"]
 httpd = server(address, handler)
 #httpd = socketserver.TCPServer(address, handler)
 
-print(f"Serveur démarré sur le port {port}")
+print("Serveur démarré sur le port {}".format(port))
 
 httpd.serve_forever()
